@@ -337,4 +337,18 @@ template {
   display: none;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+p {
+  text-align: left;
+}
+
+.container {
+  margin: 2em;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
