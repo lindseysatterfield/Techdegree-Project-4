@@ -3,3 +3,15 @@
  // .img--logo
  // .img--frame
  // .img--avatar
+
+.img {
+	&--avatar {
+		padding-top: 1em;
+	}
+	&--frame {
+		margin-bottom: 2em;
+		outline: thin solid lightgray;
+		outline-offset: 14px;
+		margin-top: 3em;
+	}
+}

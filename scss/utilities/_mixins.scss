@@ -1,2 +1,27 @@
+@mixin btn ($bg_clr) {
+ width: 96%;
+ padding: .9em 0;
+ margin-bottom: 1.5em;
+ border-radius: $bdr;
+ border: none;
+ color: $white;
+ text-transform: uppercase;
+ font-size: .9rem;
+ font-weight: bolder;
+ background-color: $bg_clr;
+}
+
+@mixin grid ($bg_clr) {
+ width: 100%;
+ padding: .7em 0 .7em .5em;
+ margin-bottom: .5em;
+ border-radius: $bdr;
+ border: none;
+ color: rgba(0, 0, 0, 0.349);
+ font-size: .9rem;
+ font-weight: $font-bold;
+ text-align: $txt-align;
+ background-color: $bg_clr;
+}
 
 

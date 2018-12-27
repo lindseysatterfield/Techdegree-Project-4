@@ -3,3 +3,20 @@
  // .form
  // .form__label--hidden
  // .form__input
+
+ .form {
+	&__label--hidden {
+		display: none; 
+ }
+ 	&__input {
+		display: block;
+		font-weight: bold;
+		margin-bottom: 1.5em;
+		margin-left: 1em;
+	 	padding: 1em .5em;
+	 	border: none;
+	 	border-bottom: 6px solid $color-primary;
+	 	outline: none;
+	 	width: 91%;
+ } 
+}

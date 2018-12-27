@@ -16,7 +16,32 @@
 // .centered
 // .theme__colors
 
-.container {
-	margin: 2em;
-	text-align: center;
+.grid {
+	&__col--12 {
+		margin-top: 3em;
+	}
+	&__row {
+		margin-bottom: 3em;
+	}
+	&__col--4.theme__colors {
+		@include grid ($color-secondary);
+	}
+	&__col--12.theme__colors {
+		@include grid ($color-primary);
+	}
+	&__col--6.theme__colors {
+		@include grid ($grid6);
+	}
+	&__col--3.theme__colors {
+		@include grid ($grid3);
+	}
+	&__col--5.theme__colors {
+		@include grid ($grid5);
+	}
+	&__col--7.theme__colors {
+		@include grid ($grid7);
+	}
+	&__col--8.theme__colors {
+		@include grid ($grid8);
+	}
 }
