@@ -16,25 +16,44 @@
 // .centered
 // .theme__colors
 
+.container {
+  margin: 1em;
+}
+
 .grid {
-	&__col--12 {
-		margin-top: 3em;
-	}
+  &__col--12 {
+    //margin-top: 3em;
+    @include mq('md') {
+      @include flex;
+  }
+}
 	&__row {
-		margin-bottom: 3em;
-	}
+    margin-bottom: 3em;
+    @include mq('md') {
+      @include flex {
+        justify-content: space-between;
+      }
+    }
+  }
 	&__col--4.theme__colors {
 		@include grid ($color-secondary);
 	}
 	&__col--12.theme__colors {
 		@include grid ($color-primary);
 	}
-	&__col--6.theme__colors {
-		@include grid ($grid6);
-	}
+	&__col--6 {
+    @include mq('md') {
+      @include flex {
+        align-self: center;
+      }
+    }
+    &.theme__colors {
+		  @include grid ($grid6);
+    }
+  }
 	&__col--3.theme__colors {
-		@include grid ($grid3);
-	}
+    @include grid ($grid3);
+  }
 	&__col--5.theme__colors {
 		@include grid ($grid5);
 	}
@@ -43,5 +62,6 @@
 	}
 	&__col--8.theme__colors {
 		@include grid ($grid8);
-	}
+  }
 }
+

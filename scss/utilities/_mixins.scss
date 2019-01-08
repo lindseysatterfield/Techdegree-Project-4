@@ -1,3 +1,4 @@
+//Mixins
 @mixin btn ($bg_clr) {
  width: 96%;
  padding: .9em 0;
@@ -22,6 +23,32 @@
  font-weight: $font-bold;
  text-align: $txt-align;
  background-color: $bg_clr;
+}
+
+// Media Queries
+@mixin mq($break) {
+  @if $break == 'md' {
+    @media (min-width: $break-md) {
+      @content;
+    }
+  }
+  @else if $break == 'lg' {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  }
+  @else if $break == 'xl' {
+    @media (min-width: $break-xl) {
+      @content;
+    }
+  }
+}
+
+//Flexbox
+@mixin flex {
+  @content;
+  display: flex;
+  flex-direction: row;
 }
 
 

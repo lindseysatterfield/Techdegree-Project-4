@@ -1,9 +1,10 @@
+// Variables
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 $font-primary: 'Open Sans', sans-serif;
 $txt-align: left;
 $font-bold: bold;
-
 
 // Colors
 $gray: #878787;
@@ -31,4 +32,7 @@ $grid12: $color-primary; // aqua green
 // Borders
 $bdr: .3em;
 
-// Media breakpoints
+// Media Query
+$break-md : 768px;
+$break-lg : 992px;
+$break-xl : 1200px;
