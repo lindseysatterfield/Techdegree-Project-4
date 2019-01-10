@@ -46,9 +46,10 @@
 
 //Flexbox
 @mixin flex {
-  @content;
   display: flex;
   flex-direction: row;
+  @content;
 }
+
 
 

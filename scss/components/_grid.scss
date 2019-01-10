@@ -17,51 +17,67 @@
 // .theme__colors
 
 .container {
-  margin: 1em;
+  margin: 2em;
 }
 
 .grid {
   &__col--12 {
-    //margin-top: 3em;
     @include mq('md') {
-      @include flex;
+      @include flex {
+        flex-grow: 1;
+      }
+      &.theme__colors {
+        @include grid ($color-primary);
+      }
+    }
+    
   }
-}
-	&__row {
+  
+  &__row {
     margin-bottom: 3em;
     @include mq('md') {
       @include flex {
         justify-content: space-between;
       }
     }
+    @include mq('lg') {
+      @include flex {
+        justify-content: space-between;
+      }
+    }
   }
-	&__col--4.theme__colors {
-		@include grid ($color-secondary);
+  
+  &__col--4.theme__colors {
+    @include grid ($color-secondary);
 	}
-	&__col--12.theme__colors {
-		@include grid ($color-primary);
-	}
-	&__col--6 {
+  
+  &__col--6 {
     @include mq('md') {
       @include flex {
         align-self: center;
       }
     }
     &.theme__colors {
-		  @include grid ($grid6);
+      @include grid ($grid6);
     }
   }
-	&__col--3.theme__colors {
+  
+  &__col--3.theme__colors {
     @include grid ($grid3);
   }
-	&__col--5.theme__colors {
+  
+  &__col--5.theme__colors {
 		@include grid ($grid5);
 	}
-	&__col--7.theme__colors {
+  
+  &__col--7.theme__colors {
 		@include grid ($grid7);
 	}
-	&__col--8.theme__colors {
+  
+  &__col--8.theme__colors {
 		@include grid ($grid8);
   }
+
+
 }
 

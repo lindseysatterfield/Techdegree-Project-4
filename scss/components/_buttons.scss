@@ -22,7 +22,14 @@
  }
 &--info {
 		@include btn ($btn-info);
-	}
+  }
+}
+
+[class*="btn--"] {
+  @include mq('md') {
+      min-width: 10%;
+      margin: 0 15px;
+  }
 }
 
 
