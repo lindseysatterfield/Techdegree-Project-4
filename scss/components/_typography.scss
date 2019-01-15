@@ -18,7 +18,6 @@
 	&--secondary {
 	text-align: $txt-align;
 	font-weight: 100;
-	//margin-top: 4em;
 	margin-bottom: 2em;
  }
 	&--primary {
@@ -27,12 +26,11 @@
 	padding-left: .7em;
 	padding-right: 3em;
 	color: $color-primary;
-	//margin-bottom: 1.2em;
-	//margin-top: 0;
 	font-size: 1.8rem;
   @include mq('md') {
     padding-right: 0;
     font-size: 1.5rem;
+    text-align: left;
     }
   }
 }

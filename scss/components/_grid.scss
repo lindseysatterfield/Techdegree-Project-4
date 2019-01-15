@@ -20,64 +20,155 @@
   margin: 2em;
 }
 
+@for $i from 1 through 12 {
+  .grid__col--#{$i}.theme__colors {
+    @if ($i == 12) {
+       @include grid($grid12);
+    }
+    @else if ($i == 6) {
+       @include grid($grid6);
+    }
+    @else if ($i == 4) {
+      @include grid($grid4);
+    }
+    @else if ($i == 3) {
+      @include grid($grid3);
+    }
+    @else if ($i == 5) {
+      @include grid($grid5);
+    }
+    @else if ($i == 7) {
+      @include grid($grid7);
+    }
+    @else if ($i == 8) {
+      @include grid($grid8);
+    }
+    @include mq('sm') {
+      text-align: $txt-align;
+    }
+    @include mq('md') {
+      margin: 0 10px;
+      text-align: $txt-align-ctr;
+      @include flex {
+        justify-content: center;
+      }
+    }
+  }
+}
+
 .grid {
+  &__row {
+    margin-bottom: 3em;
+    @include mq('md') {
+      @include flex {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__col--3{
+    @include mq('lg') {
+      margin-right: 4em;
+    }
+    @include mq('xl') {
+      margin-right: 17em;
+    }
+  }
+  
+  &__col--9 {
+    @include mq('lg') {
+      margin-left: 16em;
+    }
+    @include mq('xl') {
+      margin-left: 14em;
+      margin-right: 3em;
+    }
+  }
+
+  &__col--8 {
+    @include mq('xl') {
+      padding-right: 4em;
+      width: 60%;
+    }
+  }
+ 
   &__col--12 {
     @include mq('md') {
       @include flex {
         flex-grow: 1;
       }
-      &.theme__colors {
-        @include grid ($color-primary);
-      }
     }
-    
-  }
-  
-  &__row {
-    margin-bottom: 3em;
-    @include mq('md') {
-      @include flex {
-        justify-content: space-between;
-      }
-    }
-    @include mq('lg') {
-      @include flex {
-        justify-content: space-between;
-      }
-    }
-  }
-  
-  &__col--4.theme__colors {
-    @include grid ($color-secondary);
-	}
-  
-  &__col--6 {
-    @include mq('md') {
-      @include flex {
-        align-self: center;
-      }
-    }
-    &.theme__colors {
-      @include grid ($grid6);
-    }
-  }
-  
-  &__col--3.theme__colors {
-    @include grid ($grid3);
-  }
-  
-  &__col--5.theme__colors {
-		@include grid ($grid5);
-	}
-  
-  &__col--7.theme__colors {
-		@include grid ($grid7);
-	}
-  
-  &__col--8.theme__colors {
-		@include grid ($grid8);
   }
 
+ 
 
+  // OLD CODE TO BE DELETED BEFORE SUBMISSION
+  // &__col--6 {
+  //   @include mq('md') {
+  //     @include flex {
+  //       flex-direction: row;
+        
+        
+        
+  //     }
+  //   }
+  // }
 }
+//   &__row {
+//     margin-bottom: 3em;
+//     @include mq('md') {
+//       @include flex {
+//         justify-content: space-between;
+//       }
+//     }
+//     @include mq('lg') {
+//       @include flex {
+//         justify-content: space-between;
+//       }
+//     }
+//   }
+  
+//   &__col--4.theme__colors {
+//     @include grid ($color-secondary);
+// 	}
+  
+//   &__col--6 {
+//     @include mq('md') {
+//       @include flex {
+//         align-self: center;
+//       }
+//     }
+//     &.theme__colors {
+//       @include grid ($grid6);
+//     }
+//   }
+  
+//   &__col--3.theme__colors {
+//     @include grid ($grid3);
+//   }
+  
+//   &__col--5.theme__colors {
+//     @include grid ($grid5);
+// 	}
+  
+//   &__col--7.theme__colors {
+// 		@include grid ($grid7);
+// 	}
+  
+//   &__col--8.theme__colors {
+// 		@include grid ($grid8);
+//   }
+
+
+// @include mq('md') {
+//   [class*="grid__col--"] {
+//     &.theme__colors {
+//       //margin: 0 10px;
+//       text-align: center !important; 
+//       display: block;
+//     }
+//   }
+// }
+
+
 

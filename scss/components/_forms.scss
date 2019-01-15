@@ -4,18 +4,21 @@
  // .form__label--hidden
  // .form__input
 
- .form {
-   @include mq('md') {
-     padding-left: 2em;
-     margin-top: 1.3em;
-   }
-   @include mq ('lg') {
-     padding-left: 4em;
-   }
-	&__label--hidden {
+.form {
+  @include mq('md') {
+    padding-left: 2em;
+    margin-top: 1.3em;
+  }
+   
+  @include mq('lg') {
+    padding-left: 4em;
+  }
+  
+  &__label--hidden {
 		display: none; 
- }
- 	&__input {
+  }
+  
+  &__input {
 		display: block;
 		font-weight: bold;
     margin: 0 auto 1.5em auto;
@@ -26,7 +29,8 @@
     width: 90%;
     @include mq('md') {
       width: 85%;
-      margin: 1em 0 1em 1.5em;
+      margin: 1em 1em 1em 1.3em;
+      padding-right: 5em;
     }
   } 
 }
