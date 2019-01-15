@@ -706,40 +706,40 @@ p {
 }
 @media (min-width: 992px) {
   .grid__col--1 {
-    width: flex-basis;
+    flex-basis: 7.0422535211%;
   }
   .grid__col--2 {
-    width: flex-basis;
+    flex-basis: 15.4929577465%;
   }
   .grid__col--3 {
-    width: flex-basis;
+    flex-basis: 23.9436619718%;
   }
   .grid__col--4 {
-    width: flex-basis;
+    flex-basis: 32.3943661972%;
   }
   .grid__col--5 {
-    width: flex-basis;
+    flex-basis: 40.8450704225%;
   }
   .grid__col--6 {
-    width: flex-basis;
+    flex-basis: 49.2957746479%;
   }
   .grid__col--7 {
-    width: flex-basis;
+    flex-basis: 57.7464788732%;
   }
   .grid__col--8 {
-    width: flex-basis;
+    flex-basis: 66.1971830986%;
   }
   .grid__col--9 {
-    width: flex-basis;
+    flex-basis: 74.6478873239%;
   }
   .grid__col--10 {
-    width: flex-basis;
+    flex-basis: 83.0985915493%;
   }
   .grid__col--11 {
-    width: flex-basis;
+    flex-basis: 91.5492957746%;
   }
   .grid__col--12 {
-    width: flex-basis;
+    flex-basis: 100%;
   }
 }
 
