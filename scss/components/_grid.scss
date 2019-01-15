@@ -100,6 +100,12 @@
     }
   }
 
+  &__col {
+    @include mq('lg') {
+      @include g-columns;
+    }
+  }
+
  
 
   // OLD CODE TO BE DELETED BEFORE SUBMISSION

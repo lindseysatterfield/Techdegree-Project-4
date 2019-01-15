@@ -704,6 +704,44 @@ p {
     flex-grow: 1;
   }
 }
+@media (min-width: 992px) {
+  .grid__col--1 {
+    width: flex-basis;
+  }
+  .grid__col--2 {
+    width: flex-basis;
+  }
+  .grid__col--3 {
+    width: flex-basis;
+  }
+  .grid__col--4 {
+    width: flex-basis;
+  }
+  .grid__col--5 {
+    width: flex-basis;
+  }
+  .grid__col--6 {
+    width: flex-basis;
+  }
+  .grid__col--7 {
+    width: flex-basis;
+  }
+  .grid__col--8 {
+    width: flex-basis;
+  }
+  .grid__col--9 {
+    width: flex-basis;
+  }
+  .grid__col--10 {
+    width: flex-basis;
+  }
+  .grid__col--11 {
+    width: flex-basis;
+  }
+  .grid__col--12 {
+    width: flex-basis;
+  }
+}
 
 .img--frame {
   border: solid 1px lightgray;
