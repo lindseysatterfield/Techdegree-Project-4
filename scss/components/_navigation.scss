@@ -2,18 +2,6 @@
 
 // .nav__item
 .nav {
-  //@include mq('md') {
-    //display: flex;
-    //flex-direction: row;
-    //align-content: space-between;
-  //}
-  // @include mq {
-  //   margin: 0;
-  //   padding: 0;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: flex-end;
-  // }
   @include mq('md') {
     @include flex {
       padding-top: .5em;
@@ -22,6 +10,7 @@
 
     }
   }
+  
   &__item {
     padding: 1em 0;
     @include mq('md') {

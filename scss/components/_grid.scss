@@ -66,6 +66,12 @@
     }
   }
 
+  &__col {
+    @include mq('md') {
+      @include g-columns;
+      }
+    }
+
   &__col--3{
     @include mq('lg') {
       margin-right: 4em;
@@ -99,82 +105,7 @@
       }
     }
   }
-
-  &__col {
-    @include mq('lg') {
-      @include g-columns;
-    }
-  }
-
+}
  
 
-  // OLD CODE TO BE DELETED BEFORE SUBMISSION
-  // &__col--6 {
-  //   @include mq('md') {
-  //     @include flex {
-  //       flex-direction: row;
-        
-        
-        
-  //     }
-  //   }
-  // }
-}
-//   &__row {
-//     margin-bottom: 3em;
-//     @include mq('md') {
-//       @include flex {
-//         justify-content: space-between;
-//       }
-//     }
-//     @include mq('lg') {
-//       @include flex {
-//         justify-content: space-between;
-//       }
-//     }
-//   }
-  
-//   &__col--4.theme__colors {
-//     @include grid ($color-secondary);
-// 	}
-  
-//   &__col--6 {
-//     @include mq('md') {
-//       @include flex {
-//         align-self: center;
-//       }
-//     }
-//     &.theme__colors {
-//       @include grid ($grid6);
-//     }
-//   }
-  
-//   &__col--3.theme__colors {
-//     @include grid ($grid3);
-//   }
-  
-//   &__col--5.theme__colors {
-//     @include grid ($grid5);
-// 	}
-  
-//   &__col--7.theme__colors {
-// 		@include grid ($grid7);
-// 	}
-  
-//   &__col--8.theme__colors {
-// 		@include grid ($grid8);
-//   }
-
-
-// @include mq('md') {
-//   [class*="grid__col--"] {
-//     &.theme__colors {
-//       //margin: 0 10px;
-//       text-align: center !important; 
-//       display: block;
-//     }
-//   }
-// }
-
-
-
+ 

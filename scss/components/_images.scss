@@ -6,17 +6,16 @@
 
 .img {
 	&--frame {
-		//margin-bottom: 2em;
     border: solid 1px lightgray;
     padding: .6em;
     margin-bottom: 2em;
-    //margin-top: 3em;
     width: 100%;
     height: 100%;
     @include mq('md') {
       margin-bottom: 0;
     }
   }
+  
   &--avatar {
     padding: .6em;
   }

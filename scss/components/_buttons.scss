@@ -8,27 +8,31 @@
 // .theme__colors
 
 .btn {
- &--default {
+  &--default {
 		@include btn ($color-secondary);
- }
- &--success {
+  }  
+
+  &--success {
 	 	@include btn ($btn-success);
- }
- &--error {
+  }
+
+  &--error {
 		@include btn ($btn-error);
-	}
-&--warning {
-		@include btn ($btn-warning);
- }
-&--info {
+  }
+  
+  &--warning {
+	  @include btn ($btn-warning);
+  }
+  
+  &--info {
 		@include btn ($btn-info);
   }
 }
 
 [class*="btn--"] {
   @include mq('md') {
-      min-width: 10%;
-      margin: 0 10px;
+    min-width: 10%;
+    margin: 0 10px;
   }
 }
 

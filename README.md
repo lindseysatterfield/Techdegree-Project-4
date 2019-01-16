@@ -1,1 +1,3 @@
-# Techdegree-Project-4
+## Circles UI Kit
+
+#### In this project, I used an `index.html` file with a set of class names already defined. I was then responsible for creating rules to style the web page using each of those class names that also adhered to the mockups. I wrote my CSS using Sass with partials, variables, extends, and mixins to apply the styles/classes to the style guide page. I started with a mobile friendly approach and then moved to tablet and desktop sizing.
